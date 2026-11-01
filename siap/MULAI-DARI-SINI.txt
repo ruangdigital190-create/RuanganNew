@@ -1,0 +1,29 @@
+RUANGDIGITAL190 — WEBSITE BARU DARI NOL
+=====================================
+
+JANGAN CAMPUR FILE INI DENGAN REPOSITORY LAMA.
+Paket ini mandiri. Buat 1 repository GitHub baru dan 1 project Supabase baru.
+
+URUTAN WAJIB:
+[1] Supabase Dashboard → New project
+[2] Supabase SQL Editor → run sql/01-schema.sql
+[3] Supabase SQL Editor → run sql/02-seed-products.sql
+[4] Supabase → salin Project URL dan public/anon key
+[5] Edit js/config.js pada paket (isi URL dan public key BARU)
+[6] GitHub → New repository → Public → Add README
+[7] GitHub → Add file → Upload files → upload seluruh ISI paket ke ROOT
+[8] GitHub Settings → Pages → Deploy from branch → main / root
+[9] Supabase Authentication → URL Configuration → Site URL = situs GitHub baru
+[10] Buka website publik → Akun → Buat Akun, username sholeh123
+[11] Verifikasi email, jika diminta
+[12] Supabase SQL Editor → run sql/03-activate-admin.sql
+[13] Buka admin.html pada situs GitHub baru → login username + password akun tadi
+[14] Uji tambah/edit/hapus produk, paket, stok, gambar, poster, dan website publik
+
+LIHAT README.md UNTUK PETUNJUK KLIK YANG LEBIH RINCI.
+
+PENTING:
+- Password admin TIDAK disimpan dalam kode.
+- JANGAN unggah kunci secret/service_role atau password database ke GitHub.
+- QRIS otomatis belum tersedia. Konfirmasi pembayaran dilakukan admin.
+- Tidak perlu Edge Function atau PowerShell untuk mengaktifkan login admin.
